@@ -6,8 +6,7 @@ document.getElementById("merge").addEventListener("click", async () => {
 });
 
 async function mergeSort(arr, left, right) {
-    const speed = document.querySelector("#sort_speed").value;
-    console.log(speed); 
+    
     if (left >= right) return;
 
     const mid = Math.floor(left + (right - left) / 2);
@@ -22,7 +21,7 @@ async function mergeSort(arr, left, right) {
 async function merge(arr, left, mid, right) {
     const n1 = mid - left + 1;
     const n2 = right - mid;
-
+    const speed = document.querySelector("#sort_speed").value;
     // Create temp arrays
     const L = [], R = [];
     for (let i = 0; i < n1; i++) {
