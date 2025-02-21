@@ -37,6 +37,7 @@ async function selectionSort() {
 
 // Function to swap bar heights
 async function swap(el1, el2) {
+    const speed = document.querySelector("#sort_speed").value;
     const style1 = window.getComputedStyle(el1);
     const style2 = window.getComputedStyle(el2);
 
