@@ -1,8 +1,8 @@
 
 async function bubbleSort(){
     const bars = document.querySelectorAll(".bar");
-    const speed = document.getElementById("sort_speed").value;
-    console.log(speed);
+    const speed = document.querySelector("#sort_speed").value;
+    
 
     for(let i = 0; i < bars.length - 1; i++){
         for(let j = 0; j < bars.length - i - 1;j++){

@@ -32,7 +32,6 @@ async function selectionSort() {
         bars[i].style.background = "green"; // Mark as sorted
     }
     bars[bars.length - 1].style.background = "green"; // Mark last element as sorted
-    console.log("Selection sort completed!");
 }
 
 // Function to swap bar heights
