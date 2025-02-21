@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(17, 13, 13);
+}
+.header{
+    color: white;
+}
+.sortbuttons{
+    margin-right: 5px;
+}
+#bubble, #selection, #quick, #merge, #insertion{
+    margin-right: 5px;
+}
+#bars {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px;
+    gap: 2px;
+    margin: 20px auto;
+    max-width: 800px;
+
+}
+
+.bar {
+    width: 5px;
+    background-color: greenyellow;
+    transition: height 0.3s ease;
+}
