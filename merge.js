@@ -1,5 +1,4 @@
 
-
 document.getElementById("merge").addEventListener("click", async () => {
     const bars = document.querySelectorAll(".bar");
     console.log(`Total bars: ${bars.length}`);
