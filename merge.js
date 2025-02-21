@@ -3,6 +3,7 @@ document.getElementById("merge").addEventListener("click", async () => {
     const bars = document.querySelectorAll(".bar");
     console.log(`Total bars: ${bars.length}`);
     await mergeSort(bars, 0, bars.length - 1);
+    confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
 });
 
 async function mergeSort(arr, left, right) {

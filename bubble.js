@@ -30,6 +30,7 @@ async function bubbleSort(){
             bars[bars.length - i -1].style.background = "green";
         }
         bars[0].style.background = "green";
+        confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
     }
 
     //swap function for swapping the bar heights
@@ -45,3 +46,4 @@ async function bubbleSort(){
     }
 
     document.getElementById("bubble").addEventListener("click", bubbleSort); // Call the function when button is clicked;
+    

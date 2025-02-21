@@ -3,7 +3,7 @@ document.getElementById("quick").addEventListener("click", async () => {
     const bars = document.querySelectorAll(".bar");
     console.log(`Total bars: ${bars.length}`);
     await quickSort(bars, 0, bars.length - 1);
-    console.log("complete!");
+    confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
 });
 
 async function quickSort(arr, start, end){

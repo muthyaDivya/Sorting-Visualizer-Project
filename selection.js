@@ -33,6 +33,7 @@ async function selectionSort() {
         bars[i].style.background = "green"; // Mark as sorted
     }
     bars[bars.length - 1].style.background = "green"; // Mark last element as sorted
+    confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
 }
 
 // Function to swap bar heights

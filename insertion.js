@@ -2,6 +2,7 @@ document.getElementById("insertion").addEventListener("click", async () => {
     const bars = document.querySelectorAll(".bar");
     console.log(`Total bars: ${bars.length}`);
     await insertionSort(bars);
+    confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
 });
 
 async function insertionSort(arr){
