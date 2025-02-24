@@ -14,12 +14,16 @@
         <nav class="navbar">
             <div class="newarray">
                 <button id="array" type="button" class="btn btn-dark newarray btn-outline-info">New Array</button>
-                <span>
-                    //no of bars
-                <input id="arr_sz" type="range"  min=20 max=120 step=1 value=60>
-                <input id="sort_speed" type="range"  min=100 max=200 step=1 value=100>
-                </span>
             </div>
+            <div class="sliders">
+                <label for="arr_sz">Number of Bars:</label>
+                <input id="arr_sz" type="range"  min=20 max=120 step=1 value=60>
+            </div>
+            <div class="sliders">
+                <label for="arr_sz">Speed:</label>
+                <input id="sort_speed" type="range"  min=100 max=200 step=1 value=100>
+            </div>   
+            
             <div class="sortbuttons">
                 <button id="bubble" type="button" class="btn btn-dark bubblesort btn-outline-primary">Bubble sort</button>
                 <button id="selection" type="button" class="btn btn-dark selectionsort btn-outline-primary">Selection sort</button>
